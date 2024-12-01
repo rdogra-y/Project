@@ -1,0 +1,11 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+
+    # Redirect /course/<id> to course.php?id=<id>
+    RewriteRule ^course/([0-9]+)$ course.php?id=$1 [L,QSA]
+
+    # Redirect /category/<name> to category.php?name=<name>
+    RewriteRule ^category/([a-zA-Z0-9_-]+)$ category.php?name=$1 [L,QSA]
+
+    # Add other rewrites if needed
+</IfModule>
