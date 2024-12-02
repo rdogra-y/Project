@@ -2,34 +2,28 @@
 session_start();
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-    $email = $_POST['email'];
+    $username = $_POST['username'];
     $password = $_POST['password'];
 
-    try {
-        $pdo = new PDO('mysql:host=localhost;dbname=learning;charset=utf8', 'root', '');
-        $sql = "SELECT * FROM users WHERE email = :email AND role = 'Student'";
-        $stmt = $pdo->prepare($sql);
-        $stmt->execute([':email' => $email]);
-        $user = $stmt->fetch(PDO::FETCH_ASSOC);
+    // Dummy credentials for demonstration
+    $valid_username = 'student';
+    $valid_password = 'password123';
 
-        if ($user && password_verify($password, $user['password'])) {
-            // Set session variables
-            $_SESSION['user_id'] = $user['user_id'];
-            $_SESSION['username'] = $user['username'];
-            header('Location: dashboard.php'); // Redirect to the dashboard
-            exit();
-        } else {
-            $error = 'Invalid email or password.';
-        }
-    } catch (PDOException $e) {
-        echo "Error: " . $e->getMessage();
+    if ($username === $valid_username && $password === $valid_password) {
+        $_SESSION['student'] = $username;
+        header('Location: index_student.php'); // Redirect to a student-specific page
+        exit();
+    } else {
+        $error = 'Invalid username or password';
     }
 }
 ?>
 
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Student Login</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
@@ -39,10 +33,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     <?php if (!empty($error)): ?>
         <div class="alert alert-danger"><?= $error ?></div>
     <?php endif; ?>
-    <form method="POST">
+    <form method="POST" action="">
         <div class="mb-3">
-            <label for="email" class="form-label">Email</label>
-            <input type="email" class="form-control" id="email" name="email" required>
+            <label for="username" class="form-label">Username</label>
+            <input type="text" class="form-control" id="username" name="username" required>
         </div>
         <div class="mb-3">
             <label for="password" class="form-label">Password</label>
