@@ -1,8 +1,8 @@
 <?php
 // Database connection
 $dsn = 'mysql:host=localhost;dbname=learning;charset=utf8';
-$username = 'serveruser';
-$password = 'gorgonzola7!';
+$username = 'root';
+$password = '';
 $results_per_page = 5; // Number of results per page
 
 $errors = [];

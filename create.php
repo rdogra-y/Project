@@ -1,8 +1,8 @@
 <?php
 // Define database connection variables
 $dsn = 'mysql:host=localhost;dbname=learning;charset=utf8';
-$username = 'serveruser';
-$password = 'gorgonzola7!';
+$username = 'root';
+$password = '';
 
 // Initialize database connection
 try {

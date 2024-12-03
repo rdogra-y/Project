@@ -11,22 +11,22 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $username = $_POST['username'];
     $password = $_POST['password'];
 
-    $query = $conn->prepare("SELECT * FROM users WHERE username = ? AND password = ? AND role = 'Student'");
+    $query = $conn->prepare("SELECT * FROM users WHERE username = ? AND password = ? AND role = 'Admin'");
     $query->execute([$username, $password]);
     $user = $query->fetch();
 
     if ($user) {
-        $_SESSION['student'] = $user['username'];
-        header("Location: index_student.php");
+        $_SESSION['admin'] = $user['username'];
+        header("Location: admin_dashboard.php");
         exit();
     } else {
-        echo "Invalid credentials or not a student.";
+        echo "Invalid credentials or not an admin.";
     }
 }
 ?>
 
 <form method="POST">
-    <h2>Student Login</h2>
+    <h2>Admin Login</h2>
     <input type="text" name="username" placeholder="Username" required>
     <input type="password" name="password" placeholder="Password" required>
     <button type="submit">Login</button>

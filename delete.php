@@ -1,8 +1,8 @@
 <?php
 // Database connection settings
 $dsn = 'mysql:host=localhost;dbname=learning;charset=utf8';
-$username = 'serveruser';
-$password = 'gorgonzola7!';
+$username = 'root';
+$password = '';
 
 // Initialize error and success message arrays
 $errors = [];

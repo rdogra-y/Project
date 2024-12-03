@@ -29,45 +29,14 @@
         <li><a class="dropdown-item" href="student_login.php">Student login</a></li>
         <li><a class="dropdown-item" href="#">Another action</a></li>
         <li><hr class="dropdown-divider"></li>
-        <li><a class="dropdown-item" href="#">Something else here</a></li>
+        <li><a class="dropdown-item" href="admin_login.php">Admin login</a></li>
     </ul>
 </li>
 
     </header>
 
-   <!-- Image Slider with Sidebar -->
-   <!-- <section>
-        <div id="carouselExampleIndicators" class="carousel slide">
-  <div class="carousel-indicators">
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-  </div>
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="images/one.png" class="d-block w-100" alt="Projects">
-    </div>
-    <div class="carousel-item">
-      <img src="images/four.png" class="d-block w-100" alt="Projects">
-    </div>
-    <div class="carousel-item">
-      <img src="images/seven.png" class="d-block w-100" alt="Projects">
-    </div>
-  </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
-</div>
-    </section> -->
-
-
     <section>
-        <h2>Here is a quick<a href="Quiz/index.html"> Quiz </a>for you</h2>
+        <h2>Welcome to our learning platform – the ultimate hub for students to master coding! Our interactive courses, real-world projects, and expert guidance make coding simple and enjoyable. Whether you're a beginner or advancing your skills, you'll find resources tailored to your journey. Start coding today and unlock endless opportunities in tech with our student-focused platform!</h2>
     </section>
 
     <div id="carouselExample" class="carousel slide">
