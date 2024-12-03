@@ -27,7 +27,7 @@
     </a>
     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
         <li><a class="dropdown-item" href="student_login.php">Student login</a></li>
-        <li><a class="dropdown-item" href="#">Another action</a></li>
+        <li><a class="dropdown-item" href="instructor_login.php">instructor login</a></li>
         <li><hr class="dropdown-divider"></li>
         <li><a class="dropdown-item" href="admin_login.php">Admin login</a></li>
     </ul>
