@@ -63,7 +63,7 @@ try {
         }
     }
 } catch (PDOException $e) {
-    error_log("Database Error: " . $e->getMessage(), 3, 'errors.log');
+    error_log("Database Error: " . $e->getMessage(), 3, 'logs/errors.log');
     $errors[] = "There was an issue updating the course. Please try again later.";
 }
 ?>

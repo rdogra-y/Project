@@ -10,7 +10,7 @@ try {
     $stmt = $pdo->query("SELECT * FROM Courses ORDER BY course_id ASC");
     $courses = $stmt->fetchAll(PDO::FETCH_ASSOC);
 } catch (PDOException $e) {
-    error_log("Database Error: " . $e->getMessage(), 3, 'errors.log');
+    error_log("Database Error: " . $e->getMessage(), 3, 'logs/errors.log');
     die("There was an issue retrieving the courses. Please try again later.");
 }
 ?>

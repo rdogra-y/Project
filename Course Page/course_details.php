@@ -4,8 +4,8 @@ session_start();
 // Database connection
 $host = "localhost";
 $db = "learning";
-$user = "root"; // Update this with your DB username
-$pass = ""; // Update this with your DB password
+$user = "root"; 
+$pass = ""; 
 
 $conn = new PDO("mysql:host=$host;dbname=$db", $user, $pass);
 
@@ -39,7 +39,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     if (!empty($comment)) {
         $insert_query = $conn->prepare("INSERT INTO feedback (user_id, course_id, comments) VALUES (?, ?, ?)");
         $insert_query->execute([$user_id, $course_id, $comment]);
-        header("Location: course_details.php?course_id=$course_id");
+        header("Location: Course Pages/course_details.php?course_id=$course_id");
         exit();
     } else {
         $error = "Comment cannot be empty.";

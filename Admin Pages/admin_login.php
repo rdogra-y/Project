@@ -17,7 +17,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
     if ($user) {
         $_SESSION['admin'] = $user['username'];
-        header("Location: admin_dashboard.php");
+        header("Location: Admin Pages/admin_dashboard.php");
         exit();
     } else {
         echo "Invalid credentials or not an admin.";

@@ -1,29 +1,27 @@
 const questions = [
     {
-        question: "who is most pretty in the world?",
+        question: "whats the full form of html?",
         answers: [
-            {text: "U", correct: false},
-            {text: "Me", correct: false},
-            {text: "Radha", correct: false},
-            {text: "All", correct: true},
+            {text: "hypertext mark language", correct: false},
+            {text: "hyper markup language", correct: false},
+            {text: "no full form", correct: false},
+            {text: "hypertext markup language", correct: true},
         ]
     },
     {
-        question: "Whats peace?",
+        question: "Whats use of css?",
         answers: [
-            {text: "Mountains", correct: false},
-            {text: "Oceans", correct: false},
-            {text: "Radha", correct: true},
-            {text: "All", correct: false},
+            {text: "It just a fancy word", correct: false},
+            {text: "there is no such word", correct: false},
+            {text: "helps in designing and make the website attractive", correct: true},
+            {text: "it makes structure", correct: false},
         ]
     },
     {
-        question: "Whats tiredness?",
+        question: "can we xampp for database?",
         answers: [
-            {text: "Pain", correct: false},
-            {text: "Disappointment", correct: false},
-            {text: "Self Doubt", correct: false},
-            {text: "All", correct: true},
+            {text: "no", correct: false},
+            {text: "yes", correct: true},
         ]
     }
 

@@ -130,7 +130,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     mail($to, $subject, $emailBody);
     
     // Redirect back to contact page with success message
-    header("Location: index.php?status=success");
+    header("Location: Core Pages/index.php?status=success");
     exit;
 }
 ?>

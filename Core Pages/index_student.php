@@ -2,7 +2,7 @@
 session_start();
 
 if (!isset($_SESSION['student'])) {
-    header('Location: student_login.php');
+    header('Location: User Pages/student_login.php');
     exit();
 }
 
@@ -14,7 +14,7 @@ if (!isset($_SESSION['student'])) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>U&Learning</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="Styling/styles.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
 </head>
@@ -22,16 +22,16 @@ if (!isset($_SESSION['student'])) {
 <body>
     <!-- Navbar -->
     <header class="navbar">
-        <div class="logo"><a href="index_student.php">U&Learning<a></div>
+        <div class="logo"><a href="Core Pages/index_student.php">U&Learning<a></div>
         <nav>
             <ul class="nav-links">
-                <li><a href="home_student.php">Home</a></li>
-                <li><a href="#">Search</a></li>
+                <li><a href="Core Pages/home_student.php">Home</a></li>
+                <li><a href="Core Pages/about.php">About U</a></li>
                 <li>
                 <h1 class="mt-5">Welcome,to <?= htmlspecialchars($_SESSION['student']); ?> page!</h1>
                 </li>
                 <li>
-                <a href="logout.php" class="btn btn-danger mt-3">Logout</a>
+                <a href="User pages/logout.php" class="btn btn-danger mt-3">Logout</a>
                 </li>
             </ul>
         </nav>

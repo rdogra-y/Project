@@ -41,7 +41,7 @@ try {
     }
 } catch (PDOException $e) {
     // Log the error and display a generic error message
-    error_log("Database Error: " . $e->getMessage(), 3, 'errors.log');
+    error_log("Database Error: " . $e->getMessage(), 3, 'logs/errors.log');
     $errors[] = "There was an issue deleting the course. Please try again later.";
 }
 ?>
