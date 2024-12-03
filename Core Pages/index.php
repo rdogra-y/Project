@@ -16,7 +16,7 @@
         <nav>
             <ul class="nav-links">
                 <li><a href="#">Home</a></li>
-                <li><a href="#">Search</a></li>
+                <li><a href="about.php">About U</a></li>
             </ul>
         </nav>
         
