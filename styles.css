@@ -1,15 +1,15 @@
 General Styles
-/* body {
+body {
     margin: 0;
     font-family: Arial, sans-serif;
-} */
+}
 
 /* Navbar */
-/* .navbar {
+.navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #333;
+    background-color: #4CAF50;
     color: white;
     padding: 10px 20px;
 }
@@ -68,10 +68,10 @@ General Styles
 
 .navbar .dropdown:hover .dropdown-content {
     display: block;
-} */
+}
 
 /* Hero Section */
-/* .hero {
+.hero {
     background: url('hero-image.jpg') no-repeat center center/cover;
     height: 100vh;
     display: flex;
@@ -119,10 +119,10 @@ General Styles
 
 .profile p {
     margin: 5px 0;
-} */
+}
 
 /* Quiz Section */
-/* .quiz-section {
+.quiz-section {
     text-align: center;
     padding: 20px;
     background-color: #333;
@@ -137,12 +137,12 @@ General Styles
 
 .quiz-section h2 a:hover {
     text-decoration: underline;
-} */
+}
 
 /* Footer */
-/* footer {
+footer {
     background-color: #333;
     color: white;
     text-align: center;
     padding: 10px 0;
-} */
+}

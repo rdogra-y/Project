@@ -39,9 +39,84 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             background-color: #f4f4f9;
             color: #333;
             display: flex;
-            justify-content: center;
+            flex-direction: column;
             align-items: center;
-            height: 100vh;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        /* Navbar Styling */
+        header.navbar {
+            width: 100%;
+            background-color: #4CAF50; /* Green background */
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 10;
+        }
+
+        .navbar .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 15px;
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1rem;
+        }
+
+        .nav-links a:hover {
+            text-decoration: underline;
+        }
+
+        .nav-item {
+            position: relative;
+        }
+
+        .dropdown-menu {
+            display: none;
+            position: absolute;
+            top: 30px;
+            left: 0;
+            background-color: white;
+            color: #333;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            z-index: 100;
+        }
+
+        .dropdown-menu a {
+            color: #333;
+            padding: 10px 20px;
+            display: block;
+            text-decoration: none;
+        }
+
+        .dropdown-menu a:hover {
+            background-color: #f4f4f9;
+        }
+
+        .nav-item:hover .dropdown-menu {
+            display: block;
         }
 
         /* Form Styling */
@@ -52,6 +127,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
             width: 300px;
             text-align: center;
+            margin-top: 100px; /* Space below navbar */
         }
 
         form h2 {
@@ -84,15 +160,40 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             background-color: #45a049;
         }
 
-        /* Error Message Styling */
-        .error-message {
-            color: red;
-            font-size: 0.9rem;
-            margin-top: 10px;
+        /* Footer Styling */
+        footer {
+            text-align: center;
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
         }
     </style>
 </head>
 <body>
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="logo">U&Learning</div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.php">Home</a></li>
+                <li><a href="about.php">About U</a></li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Login</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="student_login.php">Student login</a></li>
+                        <li><a href="instructor_login.php">Instructor login</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a href="admin_login.php">Admin login</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Login Form -->
     <form method="POST">
         <h2>Instructor Login</h2>
         <input type="text" name="username" placeholder="Username" required>
@@ -102,6 +203,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             <p class="error-message"><?php echo $error; ?></p>
         <?php endif; ?>
     </form>
+
+    <!-- Footer -->
+    <footer>
+        <p>Designed by Rakshita Dogra</p>
+    </footer>
 </body>
 </html>
-
