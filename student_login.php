@@ -184,7 +184,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 <li><a href="index.php">Home</a></li>
                 <li><a href="about.php">About U</a></li>
                 <li class="nav-item">
-                    <a href="#">Login</a>
+                    <a href="#" style="margin-right:72px;">Login</a>
                     <ul class="dropdown-menu">
                         <li><a href="student_login.php">Student login</a></li>
                         <li><a href="instructor_login.php">Instructor login</a></li>

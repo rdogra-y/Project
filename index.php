@@ -22,7 +22,7 @@
         
 
         <li class="nav-item dropdown">
-    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="margin-right:65px;">
        Login
     </a>
     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -42,7 +42,7 @@
     <div id="carouselExample" class="carousel slide">
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="images/one.png" class="d-block w-100" alt="...">
+      <img src="images/six.png" class="d-block w-100" alt="...">
     </div>
     <div class="carousel-item">
       <img src="images/four.png" class="d-block w-100" alt="...">

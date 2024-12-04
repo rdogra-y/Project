@@ -29,6 +29,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
     <title>Admin Login</title>
     <style>
         /* General Body Styling */
@@ -141,17 +143,29 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 </head>
 <body>
     <!-- Navbar -->
-    <header class="navbar">
+     <!-- Navbar -->
+     <header class="navbar">
         <div class="logo">U&Learning</div>
         <nav>
             <ul class="nav-links">
-                <li><a href="index.php">Home</a></li>
+                <li><a href="#">Home</a></li>
                 <li><a href="about.php">About U</a></li>
-                <li><a href="student_login.php">Student Login</a></li>
-                <li><a href="instructor_login.php">Instructor Login</a></li>
-                <li><a href="admin_login.php">Admin Login</a></li>
             </ul>
         </nav>
+        
+
+        <li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="margin-right:65px;">
+       Login
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+        <li><a class="dropdown-item" href="student_login.php">Student login</a></li>
+        <li><a class="dropdown-item" href="instructor_login.php">instructor login</a></li>
+        <li><hr class="dropdown-divider"></li>
+        <li><a class="dropdown-item" href="admin_login.php">Admin login</a></li>
+    </ul>
+</li>
+
     </header>
 
     <!-- Login Form -->
@@ -166,5 +180,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     <footer>
         <p>Designed by Rakshita Dogra</p>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
 </body>
 </html>
