@@ -93,33 +93,164 @@ try {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Create Course</title>
+    <style>
+        /* General Body Styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        /* Navbar Styling */
+        header.navbar {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        header .logo {
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+
+        .nav-links {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            gap: 15px;
+        }
+
+        .nav-links li {
+            display: inline;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .nav-links a:hover {
+            text-decoration: underline;
+        }
+
+        /* Main Form Styling */
+        h1 {
+            text-align: center;
+            margin-top: 20px;
+            color: #4CAF50;
+        }
+
+        form {
+            background: white;
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        form label {
+            font-weight: bold;
+            margin-bottom: 5px;
+            display: block;
+        }
+
+        form input[type="text"],
+        form input[type="number"],
+        form textarea,
+        form input[type="file"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+
+        form button {
+            width: 100%;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+
+        form button:hover {
+            background-color: #45a049;
+        }
+
+        /* Success and Error Messages */
+        p {
+            text-align: center;
+            font-weight: bold;
+        }
+
+        ul {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 0;
+            list-style: none;
+            text-align: left;
+        }
+
+        ul li {
+            color: red;
+        }
+    </style>
 </head>
 <body>
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="logo">U&Learning</div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="logout.php">Logout</a></li>
+                <li><a href="create.php">create page</a></li>
+                <li><a href="read.php">view page</a></li>
+                <li><a href="update.php">update page</a></li>
+                <li><a href="delete.php">delete page</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
     <h1>Create a New Course</h1>
     <?php if ($successMessage): ?>
         <p style="color: green;"><?php echo $successMessage; ?></p>
     <?php endif; ?>
     <?php if (!empty($errors)): ?>
-        <ul style="color: red;">
+        <ul>
             <?php foreach ($errors as $error): ?>
                 <li><?php echo $error; ?></li>
             <?php endforeach; ?>
         </ul>
     <?php endif; ?>
     <form method="POST" enctype="multipart/form-data">
-        <label for="title">Course Title:</label><br>
-        <input type="text" id="title" name="title" placeholder="Enter course title" required><br><br>
+        <label for="title">Course Title:</label>
+        <input type="text" id="title" name="title" placeholder="Enter course title" required>
 
-        <label for="description">Course Description:</label><br>
-        <textarea id="description" name="description" placeholder="Enter course description" required></textarea><br><br>
+        <label for="description">Course Description:</label>
+        <textarea id="description" name="description" placeholder="Enter course description" required></textarea>
 
-        <label for="instructor_id">Instructor ID:</label><br>
-        <input type="number" id="instructor_id" name="instructor_id" placeholder="Enter instructor ID" required><br><br>
+        <label for="instructor_id">Instructor ID:</label>
+        <input type="number" id="instructor_id" name="instructor_id" placeholder="Enter instructor ID" required>
 
-        <label for="image">Upload Image:</label><br>
-        <input type="file" id="image" name="image"><br><br>
+        <label for="image">Upload Image:</label>
+        <input type="file" id="image" name="image">
 
         <button type="submit">Add Course</button>
     </form>
 </body>
 </html>
+

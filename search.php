@@ -61,6 +61,19 @@ try {
     <title>Search Pages with Pagination</title>
 </head>
 <body>
+      <!-- Navbar -->
+   <header class="navbar">
+        <div class="logo">U&Learning</div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="logout.php">Logout</a></li>
+                <li><a href="create.php">create page</a></li>
+                <li><a href="read.php">view page</a></li>
+                <li><a href="update.php">update page</a></li>
+                <li><a href="delete.php">delete page</a></li>
+            </ul>
+        </nav>
+</header>
     <h1>Search Pages</h1>
 
     <!-- Search Form -->

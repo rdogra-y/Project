@@ -1,11 +1,11 @@
-/* General Styles */
-body {
+General Styles
+/* body {
     margin: 0;
     font-family: Arial, sans-serif;
-}
+} */
 
 /* Navbar */
-.navbar {
+/* .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -68,10 +68,10 @@ body {
 
 .navbar .dropdown:hover .dropdown-content {
     display: block;
-}
+} */
 
 /* Hero Section */
-.hero {
+/* .hero {
     background: url('hero-image.jpg') no-repeat center center/cover;
     height: 100vh;
     display: flex;
@@ -85,10 +85,10 @@ body {
     font-size: 3em;
     background-color: rgba(0, 0, 0, 0.5);
     padding: 10px 20px;
-}
+} */
 
 /* Instructors Section */
-.instructors {
+/* .instructors {
     padding: 50px 20px;
     text-align: center;
     background-color: #f9f9f9;
@@ -119,10 +119,10 @@ body {
 
 .profile p {
     margin: 5px 0;
-}
+} */
 
 /* Quiz Section */
-.quiz-section {
+/* .quiz-section {
     text-align: center;
     padding: 20px;
     background-color: #333;
@@ -137,12 +137,12 @@ body {
 
 .quiz-section h2 a:hover {
     text-decoration: underline;
-}
+} */
 
 /* Footer */
-footer {
+/* footer {
     background-color: #333;
     color: white;
     text-align: center;
     padding: 10px 0;
-}
+} */

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>U&Learning</title>
-    <link rel="stylesheet" href="Styling/styles.css">
+    <link rel="stylesheet" href="styles.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
 </head>
@@ -16,7 +16,7 @@
         <nav>
             <ul class="nav-links">
                 <li><a href="#">Home</a></li>
-                <li><a href="Core Pages/about.php">About U</a></li>
+                <li><a href="about.php">About U</a></li>
             </ul>
         </nav>
         
@@ -36,7 +36,7 @@
     </header>
 
     <section>
-        <h2>Welcome to our learning platform – the ultimate hub for students to master coding! Our interactive courses, real-world projects, and expert guidance make coding simple and enjoyable. Whether you're a beginner or advancing your skills, you'll find resources tailored to your journey. Start coding today and unlock endless opportunities in tech with our student-focused platform!</h2>
+        <h4>Welcome to our learning platform – the ultimate hub for students to master coding! Our interactive courses, real-world projects, and expert guidance make coding simple and enjoyable. Whether you're a beginner or advancing your skills, you'll find resources tailored to your journey. Start coding today and unlock endless opportunities in tech with our student-focused platform!</h2>
     </section>
 
     <div id="carouselExample" class="carousel slide">
